@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: wheat;
+}
+
+.headl {
+  text-align: center;
+  margin: auto;
+  margin: 10px auto 0 auto;
+}
+
+.leaderboard {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.scoresContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+table {
+  font-style: italic;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr {
+  width: 100%;
+}
+
+table tr:nth-child(odd) {
+  color: white;
+}
+
+table tr td {
+  width: 1%;
+  height: 30px;
+  padding: 0 10px;
+}
+
+input {
+  height: 30px;
+  font-style: italic;
+}
+
+.refreshBtn {
+  height: 30px;
+  border: none;
+  color: white;
+}
+
+.formBtn {
+  width: 35%;
+  margin-left: auto;
+  height: 30px;
+  border: none;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    gap: 10px;
+  }
+
+  table {
+    border: none;
+    font-style: italic;
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
